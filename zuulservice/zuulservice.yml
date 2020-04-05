@@ -1,0 +1,16 @@
+zuul.ignored-services: "*"
+zuul.prefix:  /api
+zuul.routes.organizationservice: /organization/**
+zuul.routes.assetsservice: /asset/**
+zuul.routes.authenticationservice: /auth/**
+# zuul.routes.assetsstatic.path: /assetsstatic/**
+# zuul.routes.assetsstatic.url:  http://assetsservice-static:8081
+# zuul.routes.assetsstatic.serviceId: assetsstatic
+# zuul.routes.licensestatic.ribbon.listOfServers: http://assetsservice-static1:8081, http://assetsservice-static2:8082
+# ribbon.eureka.enabled: false
+zuul.sensitiveHeaders: Cookie,Set-Cookie
+zuul.debug.request: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+# hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
+# assetsservice.ribbon.ReadTimeout: 2
+signing.key: "345345fsdfsf5345"
